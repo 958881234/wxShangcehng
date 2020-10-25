@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "星推荐 ",
+  "usingComponents": {
+    "x_searchInput":"/components/x_searchInput/x_searchInput" 
+  }
+}

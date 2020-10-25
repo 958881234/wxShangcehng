@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "购物车 ",
+  "usingComponents": {
+    "x_searchInput":"/components/x_searchInput/x_searchInput" 
+  }
+}

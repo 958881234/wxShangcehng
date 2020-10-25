@@ -1,0 +1,21 @@
+<view>
+	<x_searchInput />
+	<!-- 监听自定义事件， bind + 给子组件事件名 tabsItemChange-->
+	<x_tabs tabs="{{tabs}}" bindtabsItemChange="_handleTabsItemChange" />
+
+	<block wx:for="{{goodsList}}" wx:key="goods_id">
+		<view class="first_tab">
+			<navigator class="goods_item" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+				<view class="goods_img_wrap">
+					<!-- 有图片就用 否则就使用占位图片 -->
+					<image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'http://www.quwenqushi.com/uploadfile/2020/1022/20201022071941749.jpg'}}"></image>
+				</view>
+				<view class="goods_info_wrap">
+					<view class="goods_name">{{item.goods_name}}</view>
+					<view class="goods_price">{{item.goods_price}}</view>
+				</view>
+			</navigator>
+		</view>
+	</block>
+
+</view>

@@ -1,0 +1,6 @@
+@import "./assets/styles/iconfont.wxss";
+/* 初始化样式 */
+page,view,text,swiper,swiper-item,image,navigator{padding: 0;margin: 0;box-sizing: border-box;}
+/* 设置主题颜色，通过变量，less和wxcc和css都支持变量 */
+page{--themeColor:#eb4450;font-size: 28rpx;}
+image{width: 100%;}
